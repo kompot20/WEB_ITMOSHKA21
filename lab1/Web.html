@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+</head>
+<body>
+<header>
+  <img src="https://sun9-59.userapi.com/impg/7TaSvKSJMnyHx5GGRJ_hprGAA8sE4ALox_7waA/WjBsdlJgCCE.jpg?size=2560x1920&quality=96&sign=22930bc957f33e51eb39aa4a80085621&type=album"
+  height="20%" width="20%" alt="It's me">
+  <h1>Бабкина Дарья M33122</h1>
+  <small>Saint Petersburg, Russia</small>
+  <nav>
+    <ul>
+      <li><a href="#awesome">Обо мне</a></li>
+      <li><a href="#code">Мой Git</a></li>
+      <li><a href="#other">Цитаты великого</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="awesome">
+    <h2>Обо мне</h2>
+    <aside>
+      <pre>
+###### #    #   ##   #    # #####  #      ######
+#       #  #   #  #  ##  ## #    # #      #
+#####    ##   #    # # ## # #    # #      #####
+#        ##   ###### #    # #####  #      #
+#       #  #  #    # #    # #      #      #
+###### #    # #    # #    # #      ###### ######
+        </pre>
+    </aside>
+    <ol>
+      <li>Занимаюсь греблей</li>
+      <li>Учусь в ИТМО</li>
+      <li>Информация обновится(возможно)</li>
+    </ol>
+  </section>
+  <section id="code">
+    <h2>Я <del>не</del> пишу читаемый <a href="https://github.com/kompot20">код</a></h2>
+    <pre><code>
+        from numpy import linalg as LA
+
+        def linan(l1, l2):
+          a1 = list(map(int, l1.split()))
+          a2 = list(map(int, l2.split()))
+          b = [a1[2], a2[2]]
+          a = [a1[:-1], a2[:-1]]
+          return LA.solve(a, b)
+        ot = linan('1 1 1', '1 2 3')
+        print(ot[0], ot[1])
+        </code></pre>
+  </section>
+
+  <section id="other">
+    <h2>Мои любимые цитаты</h2>
+    <ul>
+      <li>
+        <blockquote>
+          <p>Стремитесь не к успеху, а к ценностям, которые он дает.</p>
+          <cite>Альберт Эйнштейн</cite>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>Логика может привести Вас от пункта А к пункту Б, а воображение — куда угодно.</p>
+          <cite>Альберт Эйнштейн</cite>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>E = mc<sup>2</sup></p>
+          <cite>Альберт Эйнштейн</cite>
+        </blockquote>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>
+    &copy;  <a href="https://t.me/dshk_dshk">dshk_dshk</a>
+  </p>
+</footer>
+</body>
+</html>
