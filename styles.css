@@ -1,0 +1,40 @@
+body {
+    background-color: #E4FF87;
+}
+h1, h2, p {
+    color: #803500;
+}
+li, a {
+    color: #266E1E;
+}
+cite {
+    color: #803500;
+}
+small {
+    font-family: "Apple Symbols";
+}
+blockquote{
+    border: 3px solid #266E1E;
+    padding: 10px;
+}
+pre {
+    border: 3px solid #266E1E;
+    padding: 30px;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: #803500
+}
+footer a{
+    color: #803500;
+}
+
+header img{
+    height: 20%;
+    width: 20%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px #2B1015;
+}
