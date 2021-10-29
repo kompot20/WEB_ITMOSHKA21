@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Me</title>
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="conteiner">
+            <div class="head-photo">
+                <section class="menu" id="menu">
+                    <div class="menu-item head-text">
+                        <p>Гарний випадок</p>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#my">Обо мне</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#hobby">Увлечения</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#cod">Мой код</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#expert">Опыт</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="conteiner1" id="my">
+            <div class="name">
+                    Обо мне
+            </div>
+            <div class="my">
+                <div class="my-item">
+                    <img class="photo" data-proportion-h="2" src="https://sun9-59.userapi.com/impg/7TaSvKSJMnyHx5GGRJ_hprGAA8sE4ALox_7waA/WjBsdlJgCCE.jpg?size=2560x1920&quality=96&sign=22930bc957f33e51eb39aa4a80085621&type=album">
+                </div>
+                <div class="my-item">
+                    <ul>
+                        <li>
+                            Занимаюсь греблей
+                        </li>
+                        <li>
+                            Учусь на 3 курсе университета ИТМО
+                        </li>
+                        <li>
+                            Работаю менеджером
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="conteiner2" id="cod">
+            <div class="name">
+                Мой код
+            </div>
+            <div class="my">
+                <div class="my-item">
+                    <div class="name">Пример кода на C++</div>
+                    <div>
+                        <pre><code>
+                from numpy import linalg as LA
+
+                def linan(l1, l2):
+                  a1 = list(map(int, l1.split()))
+                  a2 = list(map(int, l2.split()))
+                  b = [a1[2], a2[2]]
+                  a = [a1[:-1], a2[:-1]]
+                  return LA.solve(a, b)
+                ot = linan('1 1 1', '1 2 3')
+                print(ot[0], ot[1])
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="my-item">
+                    <ul>
+                        <li>
+
+                        </li>
+                        <li>
+                            Здесь могла бы быть ваша реклама
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="conteiner1" id="hobby">
+            <div class="name">
+                Мои Хобби
+            </div>
+            <div class="my">
+                <div class="my-item">
+
+                </div>
+            </div>
+        </section>
+        <section class="conteiner2" id="expert">
+            <div class="name">
+                Опыт
+            </div>
+            <div class="my">
+                <div class="my-item">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_menu">
+                Контакты
+                <ul class="footer_menu ul">
+                    <li class="footer_menu-item">
+                        <a href="vacancies.html">Вакансии</a>
+                    </li>
+                    <li class="footer_menu-item">
+                        <a href="promotion.html">Реклама</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_menu">
+                <a href="#menu">
+                    <svg viewBox="0 0 100 100" width="100" height="100">
+                        <defs>
+                            <path id="circle"
+                                  d="
+                                    M 50, 50
+                                    m -37, 0
+                                    a 37,37 0 1,1 74,0
+                                    a 37,37 0 1,1 -74,0"/>
+                        </defs>
+                        <text font-size="15">
+                            <textPath xlink:href="#circle">
+                                Нажми, чтобы вернуться в начало...
+                            </textPath>
+                        </text>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
