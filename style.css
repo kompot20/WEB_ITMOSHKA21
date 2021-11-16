@@ -15,6 +15,17 @@
         max-width: 1200px;
     }
 }
+@media screen and (max-width: 900px){
+    .menu{
+        flex-direction: column;
+    }
+    .my-item{
+        margin-top: 25px
+    }
+    .head-text{
+        color: black;
+    }
+}
 
 .page{
     display: flex;
@@ -27,7 +38,7 @@
 .head-photo{
     position: relative;
     width: 100%;
-    height: 20vh;
+    min-height: 20vh;
     background: url(https://kartinkin.net/uploads/posts/2021-07/1625492395_1-kartinkin-com-p-krasnii-fon-dlya-shapki-krasivie-foni-1.jpg) no-repeat center;
     background-size: cover;
 }
