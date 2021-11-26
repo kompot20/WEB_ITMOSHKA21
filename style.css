@@ -25,6 +25,19 @@
     .head-text{
         color: black;
     }
+    .sm_hob{
+        z-index: 99999;
+        opacity: 1;
+    }
+}
+
+.sm_hob{
+    padding: 2px;
+    width: 100%;
+    height: 63vh;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
 }
 
 .page{
@@ -32,7 +45,7 @@
     flex-direction: column;
     max-height: 100vh;
     overflow: auto;
-    background: url(https://kartinkin.net/uploads/posts/2021-07/1625492395_1-kartinkin-com-p-krasnii-fon-dlya-shapki-krasivie-foni-1.jpg) center;
+    background: #2a2a2a;
 }
 
 .head-photo{
