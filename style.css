@@ -10,28 +10,6 @@
     background: #860303;
 }
 
-@media screen {
-    .conteiner1, .conteiner2{
-        min-height: 200px;
-        max-width: 1200px;
-    }
-}
-@media screen and (max-width: 900px){
-    .menu{
-        flex-direction: column;
-    }
-    .my-item{
-        margin-top: 25px
-    }
-    .head-text{
-        color: black;
-    }
-    .sm_hob{
-        z-index: 99999;
-        opacity: 1;
-    }
-}
-
 .sm_hob{
     padding: 2px;
     width: 100%;
@@ -260,4 +238,26 @@ main{
     position: absolute;
     right: 7vw;
     top: 2vh;
+}
+
+@media screen {
+    .conteiner1, .conteiner2{
+        min-height: 200px;
+        max-width: 1200px;
+    }
+}
+@media screen and (max-width: 900px){
+    .menu{
+        flex-direction: column;
+    }
+    .my-item{
+        margin-top: 25px
+    }
+    .head-text{
+        color: black;
+    }
+    .sm_hob{
+        z-index: 99999;
+        opacity: 1;
+    }
 }
