@@ -17,6 +17,13 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
+var st = document.getElementById("myInput")
+st.addEventListener('keyup', function(event)
+{
+    if (event.key === 'Enter')
+        newElement();
+})
+
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
     if (ev.target.tagName === 'LI') {
