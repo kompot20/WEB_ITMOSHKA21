@@ -9,3 +9,11 @@
         latencyBlock.innerHTML = 'Load time is ' + latency + ' sec';
     };
 })();
+window.addEventListener('load',function () {
+	let a = document.querySelectorAll('.menu-link');
+	a.forEach(element => {
+		if (element.href == window.location.href) {
+			element.classList.add('active');
+		}
+	});
+})
