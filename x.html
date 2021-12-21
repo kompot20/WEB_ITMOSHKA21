@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="x.css">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Start" content="стартовая страница сайта">
+  <title>SportClub</title>
+</head>
+<body>
+    <div class="page">
+  <header class="header">
+    <div class="conteiner">
+        <div class="head-photo">
+            <section class="menu" id="menu">
+                <div class="menu-item head-text">
+                    <p>Гарний випадок</p>
+                </div>
+                <div class="menu-item">
+                    <a href="/start.html">Обо мне</a>
+                </div>
+                <div class="menu-item">
+                    <a href="/hobbies.html">Увлечения</a>
+                </div>
+                <div class="menu-item">
+                    <a href="/code.html">Мой код</a>
+                </div>
+                <div class="menu-item">
+                    <a href="/6.html">Галерея</a>
+                </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="/x.html">Список</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</header>
+<main>
+<div id="myDIV" class="header">
+  <h2>Список дел</h2>
+  <input type="text" id="myInput" placeholder="...">
+  <span onclick="newElement()" class="addBtn">Добавить</span>
+</div>
+<ul id="myUL"></ul>
+</main>
+<footer class="footer">
+  <div class="footer_container">
+    <div class="footer_menu">
+        <span>Контакты</span> 
+        <ul class="footer_menu ul">
+            <li class="footer_menu-item">
+                <a href="https://github.com/kompot20" target="_blank">GitHub</a>
+            </li>
+            <li class="footer_menu-item">
+                <a href="mailto:dashababkina2001@gmail.com" target="_blank">Почта</a>
+            </li>
+        </ul>
+    </div>
+      <div class="footer_menu">
+          <a href="#menu">
+              <svg viewBox="0 0 100 100" width="100" height="100">
+                  <defs>
+                      <path id="circle"
+                            d="
+                              M 50, 50
+                              m -37, 0
+                              a 37,37 0 1,1 74,0
+                              a 37,37 0 1,1 -74,0"/>
+                  </defs>
+                  <text font-size="15">
+                      <textPath xlink:href="#circle">
+                          Нажми, чтобы вернуться в начало...
+                      </textPath>
+                  </text>
+              </svg>
+          </a>
+      </div>
+  </div>
+  <section class="section-latency">
+      <div class="latency"></div>
+  </section>
+</footer>
+</div>
+<script src="x.js"></script>
+<script src="j.js"></script>
+</body>
+</html>

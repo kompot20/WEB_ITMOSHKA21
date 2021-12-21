@@ -1,0 +1,349 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.header {
+  background: red;
+  width: 100%;
+  box-shadow: -0px 10px 13px 3px #2b1015;
+}
+.conteiner1 {
+  background: #260201;
+}
+.conteiner2 {
+  background: #860303;
+}
+
+.sm_hob {
+  padding: 2px;
+  width: 100%;
+  /* height: 63vh; */
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.page {
+  background: #2a2a2a;
+}
+
+.head-photo {
+  position: relative;
+  width: 100%;
+  min-height: 20vh;
+  background: url(https://kartinkin.net/uploads/posts/2021-07/1625492395_1-kartinkin-com-p-krasnii-fon-dlya-shapki-krasivie-foni-1.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.head-text {
+  font-family: "Brush Script MT", sans-serif;
+  color: whitesmoke;
+}
+
+.head-text p {
+  font-family: "Brush Script MT", sans-serif;
+  color: whitesmoke;
+  text-shadow: -7px 5px 0px rgba(0, 0, 0, 64%);
+}
+
+.menu-item p {
+  margin: -2vh;
+  font-size: 185%;
+}
+
+body {
+  background: black;
+  margin: 0;
+}
+main {
+  color: whitesmoke;
+  margin: 0 14% 0;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.menu-item {
+  flex: auto;
+  text-align: center;
+  font-size: 140%;
+  margin-top: 8vh;
+}
+.menu-item a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.my {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.my-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.name {
+  text-align: center;
+  font-family: "Trattatello", sans-serif;
+  font-size: 220%;
+  padding-top: 3vh;
+}
+.photo {
+  width: 80%;
+  background: red;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: -20px -16px 0px 1px #2b1015;
+}
+.my-item ul {
+  height: 100%;
+}
+.my-item li {
+  list-style-type: none;
+  margin-top: 20%;
+  font-size: 150%;
+}
+
+.my-item pre {
+  margin: 0 0 0 -31%;
+}
+.grid-cont {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 10.5vh);
+}
+.grid-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+.hobby1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+.hobby2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.mask {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  background: #696666;
+  transition: all 0.4s ease-in-out;
+}
+.mask:hover {
+  opacity: 0.6;
+  z-index: 999999;
+}
+.mask:hover mask_ {
+  opacity: 1;
+}
+.mask p2 {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.mask p {
+  text-align: center;
+  position: relative;
+  font-style: italic;
+}
+.info {
+  display: inline-block;
+  text-decoration: none;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px black;
+}
+.info:hover {
+  box-shadow: 0 0 5px black;
+  opacity: 1;
+}
+.hobby3 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+.hobby4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.hobby5 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.footer {
+  padding-top: 20px;
+  position: relative;
+  color: black;
+  padding-bottom: 45px;
+  overflow: hidden;
+  background: #282a2f
+    url(https://kartinkin.net/uploads/posts/2021-07/1625492395_1-kartinkin-com-p-krasnii-fon-dlya-shapki-krasivie-foni-1.jpg)
+    no-repeat center;
+  padding-left: 2%;
+}
+.footer_container {
+  display: flex;
+}
+
+.footer_menu {
+  flex: auto;
+}
+.footer_menu span{
+    font-size: 150%;
+    color: rgb(0, 0, 0);
+}
+.footer_menu ul {
+  color: whitesmoke;
+}
+.footer_menu-item {
+  color: whitesmoke;
+}
+.footer_menu-item a {
+  color: whitesmoke;
+}
+/* .footer_menu-item a:visited{
+    color: #003B4A;
+} */
+.footer_menu-item a:hover {
+  color: #803500;
+}
+.footer_menu svg {
+  position: absolute;
+  right: 7vw;
+  top: 2vh;
+}
+
+@media screen {
+  .conteiner1,
+  .conteiner2 {
+    min-height: 200px;
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .grid-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-item li {
+    font-size: 100%;
+  }
+  .menu {
+    flex-direction: column;
+    padding-bottom: 3vh;
+  }
+  .menu-item {
+    margin-top: 1vh;
+  }
+  .menu-item a {
+    color: rgb(255, 255, 255);
+    font-size: 125%;
+  }
+  .my-item {
+    margin-top: 25px;
+  }
+  .head-text {
+    color: black;
+  }
+  .sm_hob {
+    z-index: 99999;
+    opacity: 1;
+  }
+  .my_code {
+    display: flex;
+    flex-direction: column;
+  }
+  .my-item li {
+    margin-top: 5%;
+    padding-right: 10%;
+  }
+}
+
+.main_code {
+  flex-grow: 1;
+  min-height: calc(100vh - 227px);
+}
+
+.body_code {
+  display: block;
+  flex-direction: column;
+}
+
+.active {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
