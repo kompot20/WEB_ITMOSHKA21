@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Me</title>
+    <title>AboutMe</title>
 </head>
 <body>
 <script src="j.js"></script>
@@ -17,19 +17,21 @@
                         <p>Гарний випадок</p>
                     </div>
                     <div class="menu-item">
-                        <a href="#my">Обо мне</a>
+                        <a class="menu-link" href="/start.html">Обо мне</a>
                     </div>
                     <div class="menu-item">
-                        <a href="#hobby">Увлечения</a>
+                        <a class="menu-link" href="/hobbies.html">Увлечения</a>
                     </div>
                     <div class="menu-item">
-                        <a href="#cod">Мой код</a>
+                        <a class="menu-link" href="/code.html">Мой код</a>
                     </div>
                     <div class="menu-item">
-                        <a href="#expert">Опыт</a>
+                        <a class="menu-link" href="/6.html">Галерея</a>
+                    </div>
+                    <div class="menu-item">
+                        <a class="menu-link" href="/x.html">Список</a>
                     </div>
                 </section>
-
             </div>
         </div>
     </header>
@@ -51,114 +53,24 @@
                         <li>
                             Учусь на 3 курсе университета ИТМО
                         </li>
-                        <li>
+                        <li> 
                             Работаю менеджером
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="conteiner2" id="cod">
-            <div class="name">
-                Мой код
-            </div>
-            <div class="my">
-                <div class="my-item">
-                    <div class="name">Пример кода на C++</div>
-                    <div>
-                        <pre><code>
-                from numpy import linalg as LA
-
-                def linan(l1, l2):
-                  a1 = list(map(int, l1.split()))
-                  a2 = list(map(int, l2.split()))
-                  b = [a1[2], a2[2]]
-                  a = [a1[:-1], a2[:-1]]
-                  return LA.solve(a, b)
-                ot = linan('1 1 1', '1 2 3')
-                print(ot[0], ot[1])
-                        </code></pre>
-                    </div>
-                </div>
-                <div class="my-item">
-                    <ul>
-                        <li>
-
-                        </li>
-                        <li>
-                            Здесь могла бы быть ваша реклама
-                        </li>
-                        <li>
-
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="conteiner1" id="hobby">
-            <div class="name">
-                Мои Хобби
-            </div>
-            <div class="my">
-                <div class="my-item">
-                    <dif class="grid-cont">
-                        <div class="sm_hob">
-                            <img src="https://sun9-49.userapi.com/impg/IsOXfpTN_Kj99soqm4IpMvM38DUoMgGD-fxwsQ/z3ruvHkOtaE.jpg?size=1920x1280&quality=96&sign=bd8912b2bb651b01e99e6c02a0941ee7&type=album">
-                        </div>
-
-                        <a pref="https://instagram.com/itmorowers?utm_medium=copy_link" class="mask">
-                            <div class="mask">
-                                <h2>Заголовок</h2>
-                                <p>Здесь описание</p>
-                            </div>
-                        </a>
-
-                        <figure class="hobby2">
-                            <img src="https://sun9-49.userapi.com/impg/IsOXfpTN_Kj99soqm4IpMvM38DUoMgGD-fxwsQ/z3ruvHkOtaE.jpg?size=1920x1280&quality=96&sign=bd8912b2bb651b01e99e6c02a0941ee7&type=album">
-                        </figure>
-
-                        <figure class="hobby1">
-                            <img src="https://sun9-87.userapi.com/impg/hqN4TZ4KlccxcshqgB2djV-bNsOAi0nIGWZtDg/5rBXwC5u0PA.jpg?size=818x834&quality=96&sign=3be3cd247d8453b98631ea40ec985f14&type=album">
-                        </figure>
-
-                        <figure class="hobby3">
-                            <img src="https://sun9-27.userapi.com/impg/tWoAfY-Pm2KWE-YN9YSQT7okfJKQfZx4JQAuVQ/GkjutnBZxpI.jpg?size=1600x1066&quality=96&sign=8c88ea538cb461a455cc63deb8261827&type=album">
-                        </figure>
-
-                        <figure class="hobby4">
-                            <img src="https://sun9-82.userapi.com/impg/mt-5PbvRrl1oymtesGeG-Czgfv8hetxW6MWd6w/Ehqj6Ls2X8Y.jpg?size=2462x1641&quality=96&sign=012731fe0729a584517d46fc6ac1656a&type=album">
-                        </figure>
-
-                        <figure class="hobby5">
-                            <img src="https://sun9-29.userapi.com/impg/ZVnHxhWaB629fRmtTSXNVtXIn6ARe1-tZhLvDg/i4db_AXq-wI.jpg?size=2500x1706&quality=96&sign=5b230daa6837ea809cef430fcc15d6af&type=album">
-                        </figure>
-                    </dif>
-                </div>
-            </div>
-        </section>
-        <section class="conteiner2" id="expert">
-            <div class="name">
-                Опыт
-            </div>
-            <div class="my">
-                <div class="my-item">
-
-                </div>
-            </div>
-        </section>
     </main>
-
-</div>
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_menu">
-                Контакты
+                <span>Контакты</span> 
                 <ul class="footer_menu ul">
                     <li class="footer_menu-item">
-                        <a href="6.html" target="_blank">Галлерея</a>
+                        <a href="https://github.com/kompot20" target="_blank">GitHub</a>
                     </li>
                     <li class="footer_menu-item">
-                        <a href="x.html" target="_blank">Список</a>
+                        <a href="mailto:dashababkina2001@gmail.com" target="_blank">Почта</a>
                     </li>
                 </ul>
             </div>
@@ -186,6 +98,6 @@
             <div class="latency"></div>
         </section>
     </footer>
-
+</div>
 </body>
 </html>
