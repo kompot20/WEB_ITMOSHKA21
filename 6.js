@@ -2,8 +2,10 @@ var btn= document.getElementById("btn").addEventListener("click",getPost);
 var con=0;
 var div= document.getElementById("cardDiv");
 var ids = [];
-
+var gif = document.getElementById("gif");
+gif.style.visibility = "hidden";
 function getPost(){
+    gif.style.visibility = "visible";
     fetch('https://jsonplaceholder.typicode.com/photos').then((res)=> {
         return res.json();
     })
@@ -30,6 +32,7 @@ function getPost(){
             console.log('Error: ' + e.message);
             console.log(e.response);
         });
+        gif.style.visibility = "hidden";
 }
 
 function getRandomInt(min, max) {
