@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  padding: 150px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+
+.slider-container {
+	max-width: 1200px;
+	margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+    padding: 0 8px;
+}
+.swiper-container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.swiper-pagination-bullet{
+   background-color:red;
+   width: 15px;
+   height: 15px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: red;
+    padding-bottom: 40px;
+}
+/* Добавить курсивный стиль шрифта для всех цитат */
+q {font-style: italic;}
+
+/* Добавить синий цвет для автора */
+.author {color: #A3876E;}
+
+.card{
+    padding: 56px;
+    text-align: center;
+    padding-bottom: 0;
+ }
