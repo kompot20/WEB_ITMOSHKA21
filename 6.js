@@ -1,55 +1,44 @@
-var btn= document.getElementById("btn").addEventListener("click",getPost);
-var con=0;
-var div= document.getElementById("cardDiv");
-var ids = [];
-var gif = document.getElementById("gif");
-gif.style.visibility = "hidden";
-function getPost(){
-    gif.style.visibility = "visible";
-    fetch('https://jsonplaceholder.typicode.com/photos').then((res)=> {
-        return res.json();
-    })
-        .then((post)=> {
-            for (let i = 0; i < 4; i++) {
-                let a = 1.5;
-                let b = 200.5;
-                con=getRandomInt(a, b);
-                ids.push(con);
-                div.innerHTML+=`
-                    <div class="card col-3 m-1 mx-auto">
-                        <img class="card-img-top" src="${post[con].thumbnailUrl}">
-                        <div class="card-body">
-                            <h5 class="card-title">${post[con].id}</h5>
-                            <p class="card-text">${post[con].title}</p>
-                        </div>
-                    </div>
-                    
-                `
-            }
-
-        })
-        .catch((e) => {
-            console.log('Error: ' + e.message);
-            console.log(e.response);
-        });
-        gif.style.visibility = "hidden";
-}
+var btn = document.getElementById("btn")
+var con = 0;
 
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    x = Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
-    while (poisc(x) === 1) {
-        x = Math.floor(Math.random() * (max - min)) + min;
-    }
-    return x;
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
-function poisc(x) {
-    for (var i = 0; i < ids.length; i++) {
-        if (x === ids[i]) {
-            return 1;
-        }
-    }
-    return 0;
+function getPost() {
+    let gif = document.getElementById("gif");
+    let err = document.getElementById("error");
+    gif.style.visibility = "visible";
+    err.textContent = "";
+    let id = getRandomInt(1, 5001)
+    console.log(id)
+    fetch('https://jsonplaceholder.typicode.com/photos/' + id)
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error(response.status);
+            }
+        })
+        .then((post) => {
+            let tbody = document.querySelector("#cardDiv");
+            let template = document.querySelector("#temp");
+            let clone = template.content.cloneNode(true);
+            console.log(clone)
+            let title = clone.querySelector(".title");
+            let text = clone.querySelector(".text");
+            let pic = clone.querySelector(".img");
+            title.textContent = post.id;
+            text.textContent = post.title;
+            pic.setAttribute("src", post.url)
+            console.log(clone)
+            tbody.appendChild(clone)
+            gif.style.visibility = "hidden";
+        })
+        .catch((error) => {
+            err.textContent = error;
+            gif.style.visibility = "hidden";
+        });
 }
+
+btn.addEventListener("click", getPost);
