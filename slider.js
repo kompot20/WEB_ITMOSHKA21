@@ -10,6 +10,7 @@ let mySwiper = new Swiper(slider,{
             clickable: true,
   },
   centeredSlides: true,
+  //Переменная, определяющая, что картинки перемещаются циклично
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
