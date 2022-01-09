@@ -1,6 +1,8 @@
 const slider = document.querySelector('.swiper-container');
 let mySwiper = new Swiper(slider,{
+    //Переменная, отображающая сколько картинок будет отображаться при размере экрана меньше 768 (то есть одна картинка)
     slidesPerView: 1,
+    //Переменная, определяющая какие отступы между картинками должны быть
     spaceBetween: 10,
     pagination: {
             el: '.swiper-pagination',
